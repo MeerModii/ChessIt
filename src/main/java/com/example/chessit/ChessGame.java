@@ -26,7 +26,13 @@ public class ChessGame extends ChessMethods {
                 if (moveIndexes[1] == moveIndexes[3] && moveIndexes[2] == moveIndexes[0] - 1 && pieceMovesTo == null) {
                     System.out.println("Valid Pawn move");
                     return true;
-                } else {
+                }
+                else if((moveIndexes[1] == moveIndexes[3] -1 && moveIndexes[2] == moveIndexes[0] - 1 && pieceMovesTo != null) ||
+                        (moveIndexes[1] == moveIndexes[3] +1 && moveIndexes[2] == moveIndexes[0] - 1 && pieceMovesTo != null)){
+                    System.out.println("Valid Pawn Move");
+                    return true;
+                }
+                else {
                     System.out.println("Invalid Pawn move");
                     return false;
                 }
@@ -35,7 +41,13 @@ public class ChessGame extends ChessMethods {
                 if (moveIndexes[1] == moveIndexes[3] && moveIndexes[2] == moveIndexes[0] + 1 && pieceMovesTo == null) {
                     System.out.println("Valid Black Pawn move");
                     return true;
-                } else {
+                }
+                else if((moveIndexes[1] == moveIndexes[3] -1 && moveIndexes[2] == moveIndexes[0] + 1 && pieceMovesTo != null) ||
+                        (moveIndexes[1] == moveIndexes[3] +1 && moveIndexes[2] == moveIndexes[0] + 1 && pieceMovesTo != null)){
+                    System.out.println("Valid Pawn Move");
+                    return true;
+                }
+                else {
                     System.out.println("Invalid Black Pawn move");
                     return false;
                 }
