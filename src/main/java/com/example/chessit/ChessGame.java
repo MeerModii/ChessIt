@@ -44,7 +44,7 @@ public class ChessGame extends ChessMethods {
                 }
                 else if((moveIndexes[1] == moveIndexes[3] -1 && moveIndexes[2] == moveIndexes[0] + 1 && pieceMovesTo != null) ||
                         (moveIndexes[1] == moveIndexes[3] +1 && moveIndexes[2] == moveIndexes[0] + 1 && pieceMovesTo != null)){
-                    System.out.println("Valid Pawn Move");
+                    System.out.println("Valid Black Pawn Move");
                     return true;
                 }
                 else {
