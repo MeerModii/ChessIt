@@ -16,6 +16,6 @@
 - Intuitive Drag-and-Drop Mechanism: Chess It simplifies the gameplay with an intuitive drag-and-drop mechanism, allowing you to make moves effortlessly.
 
 # Screenshots:
-![image](https://github.com/MeerModii/ChessIt/assets/116285279/136e8cad-cce6-481d-9f51-b138ee1615d8)
+![image](https://github.com/MeerModii/ChessIt/assets/116285279/55685ac2-a606-48aa-8c91-2d00bb8a171f)
 ![image](https://github.com/MeerModii/ChessIt/assets/116285279/d5af553e-6ef5-43d9-8e2b-91e38032da15)
 
