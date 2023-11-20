@@ -1,4 +1,5 @@
-# Chess It
+# Chess It ![image](https://github.com/MeerModii/ChessIt/assets/116285279/1e847886-80c2-4632-8b15-a3ff955c336b)
+
 
 ## Chess It is a sophisticated Chess application crafted with Java and JavaFX, offering a responsive graphical user interface and a range of features to elevate your chess-playing experience.
 
@@ -15,7 +16,7 @@
 
 - Intuitive Drag-and-Drop Mechanism: Chess It simplifies the gameplay with an intuitive drag-and-drop mechanism, allowing you to make moves effortlessly.
 
-# Screenshots
+# Screenshots:
 ![image](https://github.com/MeerModii/ChessIt/assets/116285279/136e8cad-cce6-481d-9f51-b138ee1615d8)
 ![image](https://github.com/MeerModii/ChessIt/assets/116285279/d5af553e-6ef5-43d9-8e2b-91e38032da15)
 
