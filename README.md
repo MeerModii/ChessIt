@@ -1,4 +1,5 @@
-Chess It
+# Chess It
+
 Chess It is a sophisticated Chess application crafted with Java and JavaFX, offering a responsive graphical user interface and a range of features to elevate your chess-playing experience.
 
 Technologies Used:
@@ -18,6 +19,6 @@ Screenshots
 ![image](https://github.com/MeerModii/ChessIt/assets/116285279/136e8cad-cce6-481d-9f51-b138ee1615d8)
 ![image](https://github.com/MeerModii/ChessIt/assets/116285279/d5af553e-6ef5-43d9-8e2b-91e38032da15)
 
-Contributing
+Contributing:
 We welcome contributions!
 
