@@ -1,5 +1,4 @@
 package com.example.chessit;
-import java.util.Scanner;
 
 public class ChessGame extends ChessMethods {
 
@@ -23,7 +22,7 @@ public class ChessGame extends ChessMethods {
         if (pieceToBeMoved != null) {
             if (pieceToBeMoved.equals("Pawn")) {
                 // Check if the move is valid for a Pawn piece
-                if (moveIndexes[1] == moveIndexes[3] && moveIndexes[2] == moveIndexes[0] - 1 && pieceMovesTo == null) {
+                if (moveIndexes[1] == moveIndexes[3] && (moveIndexes[2] == moveIndexes[0] - 1 || (moveIndexes[2] == moveIndexes[0] - 2 && moveIndexes[0] == 6)) && pieceMovesTo == null) {
                     System.out.println("Valid Pawn move");
                     return true;
                 }
@@ -38,7 +37,7 @@ public class ChessGame extends ChessMethods {
                 }
             } else if (pieceToBeMoved.equals("PawnB")) {
                 // Check if the move is valid for a black Pawn piece
-                if (moveIndexes[1] == moveIndexes[3] && moveIndexes[2] == moveIndexes[0] + 1 && pieceMovesTo == null) {
+                if (moveIndexes[1] == moveIndexes[3] && (moveIndexes[2] == moveIndexes[0] + 1 || (moveIndexes[2] == moveIndexes[0] + 2 && moveIndexes[0] == 1)) && pieceMovesTo == null) {
                     System.out.println("Valid Black Pawn move");
                     return true;
                 }
@@ -116,7 +115,6 @@ public class ChessGame extends ChessMethods {
 
     @Override
     public void makeMove(int[] moveIndexes, boolean validMove) {
-        // TODO Auto-generated method stub
         String pieceToBeMoved = chessboard[moveIndexes[0]][moveIndexes[1]];
         String pieceMovesTo = chessboard[moveIndexes[2]][moveIndexes[3]];
 //
@@ -129,40 +127,5 @@ public class ChessGame extends ChessMethods {
             // Empty the source cell (set it to null)
             chessboard[moveIndexes[0]][moveIndexes[1]] = null;
         }
-    }
-
-    // Main method to run the chess game
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Create an instance of the ChessGame class
-        ChessGame chessGame = new ChessGame();
-
-        // Print the initial chessboard
-        chessGame.printChessboard();
-
-        while (true) {
-            System.out.print("Enter your move: ");
-            String input = scanner.nextLine().toUpperCase();
-
-            if (input.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting the game.");
-                break;
-            }
-
-            int[] moveIndexes = chessGame.getIndexes(input);
-            boolean isValidMove = chessGame.checkValidMove(moveIndexes);
-
-            if (isValidMove) {
-                // Apply the move and update the chessboard
-                chessGame.makeMove(moveIndexes, isValidMove);
-                System.out.println("Move is valid. Chessboard after the move:");
-                chessGame.printChessboard();
-            } else {
-                System.out.println("Invalid move. Try again.");
-            }
-        }
-
-        scanner.close();
     }
 }

@@ -1,6 +1,5 @@
 package com.example.chessit;
 
-
 public abstract class ChessMethods {
 
     // Creating chessboard array
@@ -47,6 +46,7 @@ public abstract class ChessMethods {
         }
     }
 
+    // Not used when using drag and drop feature
     public int[] convertToIndices(String position) {
         // Convert a chess notation position (e.g., A1) to array indices
         int[] indices = new int[2];
@@ -61,6 +61,7 @@ public abstract class ChessMethods {
     }
 
 
+    // Not used when using drag and drop feature
     public int[] getIndexes(String input) {
         // Split the user input (e.g., "A2 B3") and convert to array indices
         String[] moves = input.split(" ");
